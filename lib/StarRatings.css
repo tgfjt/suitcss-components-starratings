@@ -3,6 +3,8 @@
 :root {
   --StarRatings-letterspase: .2em;
   --StarRatings-star: \2605;
+  --StarRatings-color-active: gold;
+  --StarRatings-color-inactive: #dedede;
   --StarRatings-star1: "var(--StarRatings-star)";
   --StarRatings-star2: "var(--StarRatings-star)var(--StarRatings-star)";
   --StarRatings-star3: "var(--StarRatings-star)var(--StarRatings-star)var(--StarRatings-star)";
@@ -26,7 +28,7 @@
   display: block;
   width: 5em + (4 * var(--StarRatings-letterspase));
   position: relative;
-  color: gold;
+  color: var(--StarRatings-color-active);
 }
 
 .StarRatings-star::before {
@@ -40,7 +42,7 @@
   content: var(--StarRatings-star5);
   position: absolute;
   left: 0;
-  color: #dedede;
+  color: var(--StarRatings-color-inactive);
   z-index: -1;
 }
 

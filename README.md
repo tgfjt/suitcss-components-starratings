@@ -16,6 +16,8 @@ Not Yet.
 
 * `--StarRatings-letterspase`
 * `--StarRatings-star`
+* `--StarRatings-color-active`
+* `--StarRatings-color-inactive`
 
 ## Usage
 
