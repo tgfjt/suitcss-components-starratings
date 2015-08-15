@@ -1,0 +1,98 @@
+/** @define StarRatings; */
+
+:root {
+  --StarRatings-letterspase: .2em;
+  --StarRatings-star: \2605;
+  --StarRatings-star1: "var(--StarRatings-star)";
+  --StarRatings-star2: "var(--StarRatings-star)var(--StarRatings-star)";
+  --StarRatings-star3: "var(--StarRatings-star)var(--StarRatings-star)var(--StarRatings-star)";
+  --StarRatings-star4: "var(--StarRatings-star)var(--StarRatings-star)var(--StarRatings-star)var(--StarRatings-star)";
+  --StarRatings-star5: "var(--StarRatings-star)var(--StarRatings-star)var(--StarRatings-star)var(--StarRatings-star)var(--StarRatings-star)";
+}
+
+.StarRatings {
+  display: inline-block;
+}
+
+.StarRatings-forReader {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.StarRatings-star {
+  letter-spacing: var(--StarRatings-letterspase);
+  line-height: 1;
+  display: block;
+  width: 5em + (4 * var(--StarRatings-letterspase));
+  position: relative;
+  color: gold;
+}
+
+.StarRatings-star::before {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+  display: inline-block;
+}
+
+.StarRatings-star::after {
+  content: var(--StarRatings-star5);
+  position: absolute;
+  left: 0;
+  color: #dedede;
+  z-index: -1;
+}
+
+.StarRatings-star[star="0"]::before {
+  content: "";
+}
+
+.StarRatings-star[star="0.5"]::before {
+  content: var(--StarRatings-star1);
+  width: .5em;
+}
+
+.StarRatings-star[star="1"]::before {
+  content: var(--StarRatings-star1);
+}
+
+.StarRatings-star[star="1.5"]::before {
+  content: var(--StarRatings-star2);
+  width: calc(1.5em + var(--StarRatings-letterspase));
+}
+
+.StarRatings-star[star="2"]::before {
+  content: var(--StarRatings-star2);
+}
+
+.StarRatings-star[star="2.5"]::before {
+  content: var(--StarRatings-star3);
+  width: calc(2.5em + (2 * var(--StarRatings-letterspase)));
+}
+
+.StarRatings-star[star="3"]::before {
+  content: var(--StarRatings-star3);
+}
+
+.StarRatings-star[star="3.5"]::before {
+  content: var(--StarRatings-star4);
+  width: calc(3.5em + (3 * var(--StarRatings-letterspase)));
+}
+
+.StarRatings-star[star="4"]::before {
+  content: var(--StarRatings-star4);
+}
+
+.StarRatings-star[star="4.5"]::before {
+  content: var(--StarRatings-star5);
+  width: calc(4.5em + (4 * var(--StarRatings-letterspase)));
+}
+
+.StarRatings-star[star="5"]::before {
+  content: var(--StarRatings-star5);
+}
+
+.StarRatings-star[star="5"]::after {
+  content: "";
+}
