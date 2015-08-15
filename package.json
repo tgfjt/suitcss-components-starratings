@@ -23,6 +23,10 @@
     "url": "git://github.com/tgfjt/suitcss-components-starratings.git"
   },
   "license" : "MIT",
+  "author": {
+    "name": "tgfjt",
+    "email" : "tgfjt.mail@gmail.com"
+  },
   "keywords": [
     "star",
     "rating",

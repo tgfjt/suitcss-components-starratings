@@ -1,0 +1,90 @@
+/** @define StarRatings; */
+
+
+
+.StarRatings {
+  display: inline-block;
+}
+
+.StarRatings-forReader {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.StarRatings-star {
+  letter-spacing: .2em;
+  line-height: 1;
+  display: block;
+  width: 5em + (4 * .2em);
+  position: relative;
+  color: gold;
+}
+
+.StarRatings-star::before {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+  display: inline-block;
+}
+
+.StarRatings-star::after {
+  content: "\2605\2605\2605\2605\2605";
+  position: absolute;
+  left: 0;
+  color: #dedede;
+  z-index: -1;
+}
+
+.StarRatings-star[star="0"]::before {
+  content: "";
+}
+
+.StarRatings-star[star="0.5"]::before {
+  content: "\2605";
+  width: .5em;
+}
+
+.StarRatings-star[star="1"]::before {
+  content: "\2605";
+}
+
+.StarRatings-star[star="1.5"]::before {
+  content: "\2605\2605";
+  width: 1.7em;
+}
+
+.StarRatings-star[star="2"]::before {
+  content: "\2605\2605";
+}
+
+.StarRatings-star[star="2.5"]::before {
+  content: "\2605\2605\2605";
+  width: 2.9em;
+}
+
+.StarRatings-star[star="3"]::before {
+  content: "\2605\2605\2605";
+}
+
+.StarRatings-star[star="3.5"]::before {
+  content: "\2605\2605\2605\2605";
+  width: 4.1em;
+}
+
+.StarRatings-star[star="4"]::before {
+  content: "\2605\2605\2605\2605";
+}
+
+.StarRatings-star[star="4.5"]::before {
+  content: "\2605\2605\2605\2605\2605";
+  width: 5.3em;
+}
+
+.StarRatings-star[star="5"]::before {
+  content: "\2605\2605\2605\2605\2605";
+}
+
+.StarRatings-star[star="5"]::after {
+  content: "";
+}
