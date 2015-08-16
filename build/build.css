@@ -26,6 +26,8 @@
   white-space: nowrap;
   text-overflow: clip;
   display: inline-block;
+  position: relative;
+  z-index: 2;
 }
 
 .StarRatings-star::after {
@@ -33,7 +35,7 @@
   position: absolute;
   left: 0;
   color: #dedede;
-  z-index: -1;
+  z-index: 1;
 }
 
 .StarRatings-star[star="0"]::before {
