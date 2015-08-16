@@ -26,7 +26,7 @@
   letter-spacing: var(--StarRatings-letterspase);
   line-height: 1;
   display: block;
-  width: 5em + (4 * var(--StarRatings-letterspase));
+  width: calc(5em + (4 * var(--StarRatings-letterspase)));
   position: relative;
   color: var(--StarRatings-color-active);
 }
