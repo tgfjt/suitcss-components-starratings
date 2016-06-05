@@ -16,12 +16,6 @@
   display: inline-block;
 }
 
-.StarRatings-forReader {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-}
-
 .StarRatings-star {
   letter-spacing: var(--StarRatings-letterspase);
   line-height: 1;
