@@ -9,20 +9,20 @@
   ],
   "devDependencies": {
     "suitcss-components-test": "*",
-    "suitcss-preprocessor": "~0.4.0"
+    "suitcss-preprocessor": "^2.0.0"
   },
   "scripts": {
     "build": "npm run setup && npm run preprocess",
     "build-test": "npm run setup && npm run preprocess-test",
-    "preprocess": "suitcss index.css build/build.css",
-    "preprocess-test": "suitcss test/test.css build/test.css",
+    "preprocess": "suitcss --import-root lib index.css build/build.css",
+    "preprocess-test": "suitcss --import-root lib test/test.css build/test.css",
     "setup": "npm install && mkdir -p build"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/tgfjt/suitcss-components-starratings.git"
   },
-  "license" : "MIT",
+  "license": "MIT",
   "keywords": [
     "star",
     "rating",
