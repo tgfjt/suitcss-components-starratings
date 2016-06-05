@@ -1,7 +1,7 @@
 {
-  "name": "suitcss-components-starratings",
+  "name": "@tgfjt/suitcss-components-starratings",
   "description": "SUIT CSS component for star ratings",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "style": "index.css",
   "files": [
     "index.css",
