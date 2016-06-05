@@ -1,5 +1,6 @@
 {
   "name": "suitcss-components-starratings",
+  "description": "SUIT CSS component for star ratings",
   "version": "0.1.0",
   "style": "index.css",
   "files": [
