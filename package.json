@@ -9,6 +9,7 @@
     "lib"
   ],
   "devDependencies": {
+    "greenkeeper-postpublish": "^1.0.1",
     "suitcss-components-test": "*",
     "suitcss-preprocessor": "^2.0.0"
   },
@@ -17,7 +18,8 @@
     "build-test": "npm run setup && npm run preprocess-test",
     "preprocess": "suitcss --import-root lib index.css build/build.css",
     "preprocess-test": "suitcss --import-root lib test/test.css build/test.css",
-    "setup": "npm install && mkdir -p build"
+    "setup": "npm install && mkdir -p build",
+    "postpublish": "greenkeeper-postpublish"
   },
   "repository": {
     "type": "git",
