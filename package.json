@@ -10,7 +10,7 @@
   ],
   "devDependencies": {
     "greenkeeper-postpublish": "^1.0.1",
-    "suitcss-components-test": "*",
+    "suitcss-components-test": "^1.0.0",
     "suitcss-preprocessor": "^3.0.1"
   },
   "scripts": {

@@ -51,7 +51,8 @@
   width: .5em;
 }
 
-.StarRatings-star[star="1"]::before {
+.StarRatings-star[star="1"]::before,
+.StarRatings-star[star="1.0"]::before {
   content: var(--StarRatings-star1);
 }
 
@@ -60,7 +61,8 @@
   width: calc(1.5em + var(--StarRatings-letterspace));
 }
 
-.StarRatings-star[star="2"]::before {
+.StarRatings-star[star="2"]::before,
+.StarRatings-star[star="2.0"]::before {
   content: var(--StarRatings-star2);
 }
 
@@ -69,7 +71,8 @@
   width: calc(2.5em + (2 * var(--StarRatings-letterspace)));
 }
 
-.StarRatings-star[star="3"]::before {
+.StarRatings-star[star="3"]::before,
+.StarRatings-star[star="3.0"]::before {
   content: var(--StarRatings-star3);
 }
 
@@ -78,7 +81,8 @@
   width: calc(3.5em + (3 * var(--StarRatings-letterspace)));
 }
 
-.StarRatings-star[star="4"]::before {
+.StarRatings-star[star="4"]::before,
+.StarRatings-star[star="4.0"]::before {
   content: var(--StarRatings-star4);
 }
 
@@ -87,10 +91,12 @@
   width: calc(4.5em + (4 * var(--StarRatings-letterspace)));
 }
 
-.StarRatings-star[star="5"]::before {
+.StarRatings-star[star="5"]::before,
+.StarRatings-star[star="5.0"]::before {
   content: var(--StarRatings-star5);
 }
 
-.StarRatings-star[star="5"]::after {
+.StarRatings-star[star="5"]::after,
+.StarRatings-star[star="5.0"]::after {
   content: "";
 }
