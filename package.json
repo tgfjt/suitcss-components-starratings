@@ -11,7 +11,7 @@
   "devDependencies": {
     "greenkeeper-postpublish": "^1.0.1",
     "suitcss-components-test": "*",
-    "suitcss-preprocessor": "^2.0.0"
+    "suitcss-preprocessor": "^3.0.1"
   },
   "scripts": {
     "build": "npm run setup && npm run preprocess",
