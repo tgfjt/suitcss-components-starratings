@@ -4,7 +4,7 @@ provides the star-ratings UI.
 
 ## Install
 
-- npm: `npm install @tgfjt/suitcss-components-starratings`
+- npm: `npm install suitcss-components-starratings`
 - Download: [zip](https://github.com/tgfjt/suitcss-components-starratings/releases/latest)
 
 ## Available classes
